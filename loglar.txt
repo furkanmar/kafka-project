@@ -1,0 +1,698 @@
+2024-11-23 21:52:55 DEBUG:kafka.metrics.metrics:Added sensor with name connections-closed
+2024-11-23 21:52:55 DEBUG:kafka.metrics.metrics:Added sensor with name connections-created
+2024-11-23 21:52:55 DEBUG:kafka.metrics.metrics:Added sensor with name select-time
+2024-11-23 21:52:55 DEBUG:kafka.metrics.metrics:Added sensor with name io-time
+2024-11-23 21:52:55 DEBUG:kafka.client:Initiating connection to node bootstrap-0 at kafka:9092
+2024-11-23 21:52:55 DEBUG:kafka.metrics.metrics:Added sensor with name bytes-sent-received
+2024-11-23 21:52:55 DEBUG:kafka.metrics.metrics:Added sensor with name bytes-sent
+2024-11-23 21:52:55 DEBUG:kafka.metrics.metrics:Added sensor with name bytes-received
+2024-11-23 21:52:55 DEBUG:kafka.metrics.metrics:Added sensor with name request-latency
+2024-11-23 21:52:55 DEBUG:kafka.metrics.metrics:Added sensor with name node-bootstrap-0.bytes-sent
+2024-11-23 21:52:55 DEBUG:kafka.metrics.metrics:Added sensor with name node-bootstrap-0.bytes-received
+2024-11-23 21:52:55 DEBUG:kafka.metrics.metrics:Added sensor with name node-bootstrap-0.latency
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <disconnected> [unspecified None]>: creating new socket
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <disconnected> [IPv4 ('172.19.0.4', 9092)]>: setting socket option (6, 1, 1)
+2024-11-23 21:52:55 INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.19.0.4', 9092)]>: connecting to kafka:9092 [('172.19.0.4', 9092) IPv4]
+2024-11-23 21:52:55 INFO:kafka.conn:Probing node bootstrap-0 broker version
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.19.0.4', 9092)]>: established TCP connection
+2024-11-23 21:52:55 INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.19.0.4', 9092)]>: Connection complete.
+2024-11-23 21:52:55 DEBUG:kafka.client:Node bootstrap-0 connected
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Sending request ApiVersionRequest_v0()
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 1: ApiVersionRequest_v0()
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Sending request MetadataRequest_v0(topics=[])
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 2: MetadataRequest_v0(topics=[])
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Received correlation id: 1
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Processing response ApiVersionResponse_v0
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 1 (101.6693115234375 ms): ApiVersionResponse_v0(error_code=0, api_versions=[(api_key=0, min_version=0, max_version=9), (api_key=1, min_version=0, max_version=13), (api_key=2, min_version=0, max_version=7), (api_key=3, min_version=0, max_version=12), (api_key=4, min_version=0, max_version=6), (api_key=5, min_version=0, max_version=3), (api_key=6, min_version=0, max_version=7), (api_key=7, min_version=0, max_version=3), (api_key=8, min_version=0, max_version=8), (api_key=9, min_version=0, max_version=8), (api_key=10, min_version=0, max_version=4), (api_key=11, min_version=0, max_version=9), (api_key=12, min_version=0, max_version=4), (api_key=13, min_version=0, max_version=5), (api_key=14, min_version=0, max_version=5), (api_key=15, min_version=0, max_version=5), (api_key=16, min_version=0, max_version=4), (api_key=17, min_version=0, max_version=1), (api_key=18, min_version=0, max_version=3), (api_key=19, min_version=0, max_version=7), (api_key=20, min_version=0, max_version=6), (api_key=21, min_version=0, max_version=2), (api_key=22, min_version=0, max_version=4), (api_key=23, min_version=0, max_version=4), (api_key=24, min_version=0, max_version=3), (api_key=25, min_version=0, max_version=3), (api_key=26, min_version=0, max_version=3), (api_key=27, min_version=0, max_version=1), (api_key=28, min_version=0, max_version=3), (api_key=29, min_version=0, max_version=3), (api_key=30, min_version=0, max_version=3), (api_key=31, min_version=0, max_version=3), (api_key=32, min_version=0, max_version=4), (api_key=33, min_version=0, max_version=2), (api_key=34, min_version=0, max_version=2), (api_key=35, min_version=0, max_version=4), (api_key=36, min_version=0, max_version=2), (api_key=37, min_version=0, max_version=3), (api_key=38, min_version=0, max_version=3), (api_key=39, min_version=0, max_version=2), (api_key=40, min_version=0, max_version=2), (api_key=41, min_version=0, max_version=3), (api_key=42, min_version=0, max_version=2), (api_key=43, min_version=0, max_version=2), (api_key=44, min_version=0, max_version=1), (api_key=45, min_version=0, max_version=0), (api_key=46, min_version=0, max_version=0), (api_key=47, min_version=0, max_version=0), (api_key=48, min_version=0, max_version=1), (api_key=49, min_version=0, max_version=1), (api_key=50, min_version=0, max_version=0), (api_key=51, min_version=0, max_version=0), (api_key=56, min_version=0, max_version=2), (api_key=57, min_version=0, max_version=1), (api_key=60, min_version=0, max_version=0), (api_key=61, min_version=0, max_version=0), (api_key=65, min_version=0, max_version=0), (api_key=66, min_version=0, max_version=0), (api_key=67, min_version=0, max_version=0)])
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Received correlation id: 2
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Processing response MetadataResponse_v0
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 2 (1.8773078918457031 ms): MetadataResponse_v0(brokers=[(node_id=1001, host='kafka', port=9092)], topics=[])
+2024-11-23 21:52:55 INFO:kafka.conn:Broker version identified as 2.5.0
+2024-11-23 21:52:55 INFO:kafka.conn:Set configuration api_version=(2, 5, 0) to skip auto check_version requests on startup
+2024-11-23 21:52:55 DEBUG:kafka.metrics.metrics:Added sensor with name bytes-fetched
+2024-11-23 21:52:55 DEBUG:kafka.metrics.metrics:Added sensor with name records-fetched
+2024-11-23 21:52:55 DEBUG:kafka.metrics.metrics:Added sensor with name fetch-latency
+2024-11-23 21:52:55 DEBUG:kafka.metrics.metrics:Added sensor with name records-lag
+2024-11-23 21:52:55 DEBUG:kafka.metrics.metrics:Added sensor with name fetch-throttle-time
+2024-11-23 21:52:55 DEBUG:kafka.metrics.metrics:Added sensor with name heartbeat-latency
+2024-11-23 21:52:55 DEBUG:kafka.metrics.metrics:Added sensor with name join-latency
+2024-11-23 21:52:55 DEBUG:kafka.metrics.metrics:Added sensor with name sync-latency
+2024-11-23 21:52:55 DEBUG:kafka.metrics.metrics:Added sensor with name commit-latency
+2024-11-23 21:52:55 INFO:kafka.consumer.subscription_state:Updating subscribed topics to: ('sample_topic',)
+2024-11-23 21:52:55 DEBUG:kafka.coordinator:Sending group coordinator request for group test-group to broker bootstrap-0
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Sending request GroupCoordinatorRequest_v0(consumer_group='test-group')
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 3: GroupCoordinatorRequest_v0(consumer_group='test-group')
+2024-11-23 21:52:55 DEBUG:kafka.client:Sending metadata request MetadataRequest_v1(topics=['sample_topic']) to node bootstrap-0
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Sending request MetadataRequest_v1(topics=['sample_topic'])
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 4: MetadataRequest_v1(topics=['sample_topic'])
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Received correlation id: 3
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Processing response GroupCoordinatorResponse_v0
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 3 (50.882577896118164 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+2024-11-23 21:52:55 DEBUG:kafka.coordinator:Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+2024-11-23 21:52:55 DEBUG:kafka.coordinator:Group Coordinator Not Available; retry
+2024-11-23 21:52:55 DEBUG:kafka.coordinator:Sending group coordinator request for group test-group to broker bootstrap-0
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Sending request GroupCoordinatorRequest_v0(consumer_group='test-group')
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 5: GroupCoordinatorRequest_v0(consumer_group='test-group')
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Received correlation id: 4
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Processing response MetadataResponse_v1
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 4 (152.1906852722168 ms): MetadataResponse_v1(brokers=[(node_id=1001, host='kafka', port=9092, rack=None)], controller_id=1001, topics=[(error_code=5, topic='sample_topic', is_internal=False, partitions=[])])
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Received correlation id: 5
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Processing response GroupCoordinatorResponse_v0
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 5 (21.31366729736328 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+2024-11-23 21:52:55 DEBUG:kafka.coordinator:Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+2024-11-23 21:52:55 DEBUG:kafka.coordinator:Group Coordinator Not Available; retry
+2024-11-23 21:52:55 DEBUG:kafka.coordinator:Sending group coordinator request for group test-group to broker bootstrap-0
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Sending request GroupCoordinatorRequest_v0(consumer_group='test-group')
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 6: GroupCoordinatorRequest_v0(consumer_group='test-group')
+2024-11-23 21:52:55 DEBUG:kafka.client:Sending metadata request MetadataRequest_v1(topics=['sample_topic']) to node bootstrap-0
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Sending request MetadataRequest_v1(topics=['sample_topic'])
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 7: MetadataRequest_v1(topics=['sample_topic'])
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Received correlation id: 6
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Processing response GroupCoordinatorResponse_v0
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 6 (7.147312164306641 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+2024-11-23 21:52:55 DEBUG:kafka.coordinator:Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+2024-11-23 21:52:55 DEBUG:kafka.coordinator:Group Coordinator Not Available; retry
+2024-11-23 21:52:55 DEBUG:kafka.coordinator:Sending group coordinator request for group test-group to broker bootstrap-0
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Sending request GroupCoordinatorRequest_v0(consumer_group='test-group')
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 8: GroupCoordinatorRequest_v0(consumer_group='test-group')
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Received correlation id: 7
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Processing response MetadataResponse_v1
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 7 (108.61897468566895 ms): MetadataResponse_v1(brokers=[(node_id=1001, host='kafka', port=9092, rack=None)], controller_id=1001, topics=[(error_code=3, topic='sample_topic', is_internal=False, partitions=[])])
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Received correlation id: 8
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Processing response GroupCoordinatorResponse_v0
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 8 (6.872415542602539 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+2024-11-23 21:52:55 DEBUG:kafka.coordinator:Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+2024-11-23 21:52:55 DEBUG:kafka.coordinator:Group Coordinator Not Available; retry
+2024-11-23 21:52:55 DEBUG:kafka.coordinator:Sending group coordinator request for group test-group to broker bootstrap-0
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Sending request GroupCoordinatorRequest_v0(consumer_group='test-group')
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 9: GroupCoordinatorRequest_v0(consumer_group='test-group')
+2024-11-23 21:52:55 DEBUG:kafka.client:Sending metadata request MetadataRequest_v1(topics=['sample_topic']) to node bootstrap-0
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Sending request MetadataRequest_v1(topics=['sample_topic'])
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 10: MetadataRequest_v1(topics=['sample_topic'])
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Received correlation id: 9
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Processing response GroupCoordinatorResponse_v0
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 9 (6.220102310180664 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+2024-11-23 21:52:55 DEBUG:kafka.coordinator:Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+2024-11-23 21:52:55 DEBUG:kafka.coordinator:Group Coordinator Not Available; retry
+2024-11-23 21:52:55 DEBUG:kafka.coordinator:Sending group coordinator request for group test-group to broker bootstrap-0
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Sending request GroupCoordinatorRequest_v0(consumer_group='test-group')
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 11: GroupCoordinatorRequest_v0(consumer_group='test-group')
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Received correlation id: 10
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Processing response MetadataResponse_v1
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 10 (108.18696022033691 ms): MetadataResponse_v1(brokers=[(node_id=1001, host='kafka', port=9092, rack=None)], controller_id=1001, topics=[(error_code=3, topic='sample_topic', is_internal=False, partitions=[])])
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Received correlation id: 11
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Processing response GroupCoordinatorResponse_v0
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 11 (5.698442459106445 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+2024-11-23 21:52:55 DEBUG:kafka.coordinator:Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+2024-11-23 21:52:55 DEBUG:kafka.coordinator:Group Coordinator Not Available; retry
+2024-11-23 21:52:55 DEBUG:kafka.coordinator:Sending group coordinator request for group test-group to broker bootstrap-0
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Sending request GroupCoordinatorRequest_v0(consumer_group='test-group')
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 12: GroupCoordinatorRequest_v0(consumer_group='test-group')
+2024-11-23 21:52:55 DEBUG:kafka.client:Sending metadata request MetadataRequest_v1(topics=['sample_topic']) to node bootstrap-0
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Sending request MetadataRequest_v1(topics=['sample_topic'])
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 13: MetadataRequest_v1(topics=['sample_topic'])
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Received correlation id: 12
+2024-11-23 21:52:55 DEBUG:kafka.protocol.parser:Processing response GroupCoordinatorResponse_v0
+2024-11-23 21:52:55 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 12 (4.973173141479492 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+2024-11-23 21:52:55 DEBUG:kafka.coordinator:Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+2024-11-23 21:52:55 DEBUG:kafka.coordinator:Group Coordinator Not Available; retry
+2024-11-23 21:52:56 DEBUG:kafka.coordinator:Sending group coordinator request for group test-group to broker bootstrap-0
+2024-11-23 21:52:56 DEBUG:kafka.protocol.parser:Sending request GroupCoordinatorRequest_v0(consumer_group='test-group')
+2024-11-23 21:52:56 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 14: GroupCoordinatorRequest_v0(consumer_group='test-group')
+2024-11-23 21:52:56 DEBUG:kafka.protocol.parser:Received correlation id: 13
+2024-11-23 21:52:56 DEBUG:kafka.protocol.parser:Processing response MetadataResponse_v1
+2024-11-23 21:52:56 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 13 (106.57501220703125 ms): MetadataResponse_v1(brokers=[(node_id=1001, host='kafka', port=9092, rack=None)], controller_id=1001, topics=[(error_code=5, topic='sample_topic', is_internal=False, partitions=[])])
+2024-11-23 21:52:56 DEBUG:kafka.protocol.parser:Received correlation id: 14
+2024-11-23 21:52:56 DEBUG:kafka.protocol.parser:Processing response GroupCoordinatorResponse_v0
+2024-11-23 21:52:56 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 14 (4.725217819213867 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+2024-11-23 21:52:56 DEBUG:kafka.coordinator:Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+2024-11-23 21:52:56 DEBUG:kafka.coordinator:Group Coordinator Not Available; retry
+2024-11-23 21:52:56 DEBUG:kafka.coordinator:Sending group coordinator request for group test-group to broker bootstrap-0
+2024-11-23 21:52:56 DEBUG:kafka.protocol.parser:Sending request GroupCoordinatorRequest_v0(consumer_group='test-group')
+2024-11-23 21:52:56 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 15: GroupCoordinatorRequest_v0(consumer_group='test-group')
+2024-11-23 21:52:56 DEBUG:kafka.client:Sending metadata request MetadataRequest_v1(topics=['sample_topic']) to node bootstrap-0
+2024-11-23 21:52:56 DEBUG:kafka.protocol.parser:Sending request MetadataRequest_v1(topics=['sample_topic'])
+2024-11-23 21:52:56 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 16: MetadataRequest_v1(topics=['sample_topic'])
+2024-11-23 21:52:56 DEBUG:kafka.protocol.parser:Received correlation id: 15
+2024-11-23 21:52:56 DEBUG:kafka.protocol.parser:Processing response GroupCoordinatorResponse_v0
+2024-11-23 21:52:56 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 15 (4.420280456542969 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+2024-11-23 21:52:56 DEBUG:kafka.coordinator:Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+2024-11-23 21:52:56 DEBUG:kafka.coordinator:Group Coordinator Not Available; retry
+2024-11-23 21:52:56 DEBUG:kafka.coordinator:Sending group coordinator request for group test-group to broker bootstrap-0
+2024-11-23 21:52:56 DEBUG:kafka.protocol.parser:Sending request GroupCoordinatorRequest_v0(consumer_group='test-group')
+2024-11-23 21:52:56 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 17: GroupCoordinatorRequest_v0(consumer_group='test-group')
+2024-11-23 21:52:56 DEBUG:kafka.protocol.parser:Received correlation id: 16
+2024-11-23 21:52:56 DEBUG:kafka.protocol.parser:Processing response MetadataResponse_v1
+2024-11-23 21:52:56 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 16 (106.0190200805664 ms): MetadataResponse_v1(brokers=[(node_id=1001, host='kafka', port=9092, rack=None)], controller_id=1001, topics=[(error_code=5, topic='sample_topic', is_internal=False, partitions=[])])
+2024-11-23 21:52:56 DEBUG:kafka.protocol.parser:Received correlation id: 17
+2024-11-23 21:52:56 DEBUG:kafka.protocol.parser:Processing response GroupCoordinatorResponse_v0
+2024-11-23 21:52:56 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 17 (3.947019577026367 ms): GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+2024-11-23 21:52:56 DEBUG:kafka.coordinator:Received group coordinator response GroupCoordinatorResponse_v0(error_code=15, coordinator_id=-1, host='', port=-1)
+2024-11-23 21:52:56 DEBUG:kafka.coordinator:Group Coordinator Not Available; retry
+2024-11-23 21:52:56 DEBUG:kafka.coordinator:Sending group coordinator request for group test-group to broker bootstrap-0
+2024-11-23 21:52:56 DEBUG:kafka.protocol.parser:Sending request GroupCoordinatorRequest_v0(consumer_group='test-group')
+2024-11-23 21:52:56 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 18: GroupCoordinatorRequest_v0(consumer_group='test-group')
+2024-11-23 21:52:56 DEBUG:kafka.client:Sending metadata request MetadataRequest_v1(topics=['sample_topic']) to node bootstrap-0
+2024-11-23 21:52:56 DEBUG:kafka.protocol.parser:Sending request MetadataRequest_v1(topics=['sample_topic'])
+2024-11-23 21:52:56 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 19: MetadataRequest_v1(topics=['sample_topic'])
+2024-11-23 21:52:56 DEBUG:kafka.protocol.parser:Received correlation id: 18
+2024-11-23 21:52:56 DEBUG:kafka.protocol.parser:Processing response GroupCoordinatorResponse_v0
+2024-11-23 21:52:56 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 18 (6.783008575439453 ms): GroupCoordinatorResponse_v0(error_code=0, coordinator_id=1001, host='kafka', port=9092)
+2024-11-23 21:52:56 DEBUG:kafka.coordinator:Received group coordinator response GroupCoordinatorResponse_v0(error_code=0, coordinator_id=1001, host='kafka', port=9092)
+2024-11-23 21:52:56 DEBUG:kafka.cluster:Updating coordinator for test-group: GroupCoordinatorResponse_v0(error_code=0, coordinator_id=1001, host='kafka', port=9092)
+2024-11-23 21:52:56 INFO:kafka.cluster:Group coordinator for test-group is BrokerMetadata(nodeId='coordinator-1001', host='kafka', port=9092, rack=None)
+2024-11-23 21:52:56 INFO:kafka.coordinator:Discovered coordinator coordinator-1001 for group test-group
+2024-11-23 21:52:56 INFO:kafka.coordinator:Starting new heartbeat thread
+2024-11-23 21:52:56 DEBUG:kafka.coordinator:Heartbeat thread started
+2024-11-23 21:52:56 INFO:kafka.coordinator.consumer:Revoking previously assigned partitions set() for group test-group
+2024-11-23 21:52:56 DEBUG:kafka.client:Initiating connection to node coordinator-1001 at kafka:9092
+2024-11-23 21:52:56 DEBUG:kafka.metrics.metrics:Added sensor with name node-coordinator-1001.bytes-sent
+2024-11-23 21:52:56 DEBUG:kafka.metrics.metrics:Added sensor with name node-coordinator-1001.bytes-received
+2024-11-23 21:52:56 DEBUG:kafka.metrics.metrics:Added sensor with name node-coordinator-1001.latency
+2024-11-23 21:52:56 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <disconnected> [unspecified None]>: creating new socket
+2024-11-23 21:52:56 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <disconnected> [IPv4 ('172.19.0.4', 9092)]>: setting socket option (6, 1, 1)
+2024-11-23 21:52:56 INFO:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connecting> [IPv4 ('172.19.0.4', 9092)]>: connecting to kafka:9092 [('172.19.0.4', 9092) IPv4]
+2024-11-23 21:52:56 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connecting> [IPv4 ('172.19.0.4', 9092)]>: established TCP connection
+2024-11-23 21:52:56 INFO:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connecting> [IPv4 ('172.19.0.4', 9092)]>: Connection complete.
+2024-11-23 21:52:56 DEBUG:kafka.client:Node coordinator-1001 connected
+2024-11-23 21:52:56 INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]>: Closing connection. 
+2024-11-23 21:52:56 INFO:kafka.coordinator:(Re-)joining group test-group
+2024-11-23 21:52:56 DEBUG:kafka.coordinator:Sending JoinGroup (JoinGroupRequest_v2(group='test-group', session_timeout=10000, rebalance_timeout=300000, member_id='', protocol_type='consumer', group_protocols=[(protocol_name='range', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x0csample_topic\x00\x00\x00\x00'), (protocol_name='roundrobin', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x0csample_topic\x00\x00\x00\x00')])) to coordinator coordinator-1001
+2024-11-23 21:52:56 DEBUG:kafka.protocol.parser:Sending request JoinGroupRequest_v2(group='test-group', session_timeout=10000, rebalance_timeout=300000, member_id='', protocol_type='consumer', group_protocols=[(protocol_name='range', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x0csample_topic\x00\x00\x00\x00'), (protocol_name='roundrobin', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x0csample_topic\x00\x00\x00\x00')])
+2024-11-23 21:52:56 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 1: JoinGroupRequest_v2(group='test-group', session_timeout=10000, rebalance_timeout=300000, member_id='', protocol_type='consumer', group_protocols=[(protocol_name='range', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x0csample_topic\x00\x00\x00\x00'), (protocol_name='roundrobin', protocol_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x0csample_topic\x00\x00\x00\x00')])
+2024-11-23 21:52:56 DEBUG:kafka.client:Initializing connection to node bootstrap-0 for metadata request
+2024-11-23 21:52:56 DEBUG:kafka.client:Initiating connection to node bootstrap-0 at kafka:9092
+2024-11-23 21:52:56 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <disconnected> [unspecified None]>: creating new socket
+2024-11-23 21:52:56 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <disconnected> [IPv4 ('172.19.0.4', 9092)]>: setting socket option (6, 1, 1)
+2024-11-23 21:52:56 INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.19.0.4', 9092)]>: connecting to kafka:9092 [('172.19.0.4', 9092) IPv4]
+2024-11-23 21:52:56 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.19.0.4', 9092)]>: established TCP connection
+2024-11-23 21:52:56 INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connecting> [IPv4 ('172.19.0.4', 9092)]>: Connection complete.
+2024-11-23 21:52:56 DEBUG:kafka.client:Node bootstrap-0 connected
+2024-11-23 21:52:56 DEBUG:kafka.client:Sending metadata request MetadataRequest_v1(topics=['sample_topic']) to node bootstrap-0
+2024-11-23 21:52:56 DEBUG:kafka.protocol.parser:Sending request MetadataRequest_v1(topics=['sample_topic'])
+2024-11-23 21:52:56 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 1: MetadataRequest_v1(topics=['sample_topic'])
+2024-11-23 21:52:56 DEBUG:kafka.protocol.parser:Received correlation id: 1
+2024-11-23 21:52:56 DEBUG:kafka.protocol.parser:Processing response MetadataResponse_v1
+2024-11-23 21:52:56 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 1 (2.048492431640625 ms): MetadataResponse_v1(brokers=[(node_id=1001, host='kafka', port=9092, rack=None)], controller_id=1001, topics=[(error_code=0, topic='sample_topic', is_internal=False, partitions=[(error_code=0, partition=0, leader=1001, replicas=[1001], isr=[1001])])])
+2024-11-23 21:52:56 DEBUG:kafka.cluster:Updated cluster metadata to ClusterMetadata(brokers: 1, topics: 1, groups: 1)
+2024-11-23 21:52:59 DEBUG:kafka.protocol.parser:Received correlation id: 1
+2024-11-23 21:52:59 DEBUG:kafka.protocol.parser:Processing response JoinGroupResponse_v2
+2024-11-23 21:52:59 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 1 (3026.132583618164 ms): JoinGroupResponse_v2(throttle_time_ms=0, error_code=0, generation_id=1, group_protocol='range', leader_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a', member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a', members=[(member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a', member_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x0csample_topic\x00\x00\x00\x00')])
+2024-11-23 21:52:59 DEBUG:kafka.coordinator:Received successful JoinGroup response for group test-group: JoinGroupResponse_v2(throttle_time_ms=0, error_code=0, generation_id=1, group_protocol='range', leader_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a', member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a', members=[(member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a', member_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x0csample_topic\x00\x00\x00\x00')])
+2024-11-23 21:52:59 INFO:kafka.coordinator:Elected group leader -- performing partition assignments using range
+2024-11-23 21:52:59 DEBUG:kafka.coordinator.consumer:Performing assignment for group test-group using strategy range with subscriptions {'kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a': ConsumerProtocolMemberMetadata(version=0, subscription=['sample_topic'], user_data=b'')}
+2024-11-23 21:52:59 DEBUG:kafka.coordinator.consumer:Finished assignment for group test-group: {'kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a': ConsumerProtocolMemberAssignment(version=0, assignment=[(topic='sample_topic', partitions=[0])], user_data=b'')}
+2024-11-23 21:52:59 DEBUG:kafka.coordinator:Sending leader SyncGroup for group test-group to coordinator coordinator-1001: SyncGroupRequest_v1(group='test-group', generation_id=1, member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a', group_assignment=[(member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a', member_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x0csample_topic\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00')])
+2024-11-23 21:52:59 DEBUG:kafka.protocol.parser:Sending request SyncGroupRequest_v1(group='test-group', generation_id=1, member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a', group_assignment=[(member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a', member_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x0csample_topic\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00')])
+2024-11-23 21:52:59 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 2: SyncGroupRequest_v1(group='test-group', generation_id=1, member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a', group_assignment=[(member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a', member_metadata=b'\x00\x00\x00\x00\x00\x01\x00\x0csample_topic\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00')])
+2024-11-23 21:52:59 DEBUG:kafka.client:Initializing connection to node 1001 for metadata request
+2024-11-23 21:52:59 DEBUG:kafka.client:Initiating connection to node 1001 at kafka:9092
+2024-11-23 21:52:59 DEBUG:kafka.metrics.metrics:Added sensor with name node-1001.bytes-sent
+2024-11-23 21:52:59 DEBUG:kafka.metrics.metrics:Added sensor with name node-1001.bytes-received
+2024-11-23 21:52:59 DEBUG:kafka.metrics.metrics:Added sensor with name node-1001.latency
+2024-11-23 21:52:59 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <disconnected> [unspecified None]>: creating new socket
+2024-11-23 21:52:59 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <disconnected> [IPv4 ('172.19.0.4', 9092)]>: setting socket option (6, 1, 1)
+2024-11-23 21:52:59 INFO:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connecting> [IPv4 ('172.19.0.4', 9092)]>: connecting to kafka:9092 [('172.19.0.4', 9092) IPv4]
+2024-11-23 21:52:59 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connecting> [IPv4 ('172.19.0.4', 9092)]>: established TCP connection
+2024-11-23 21:52:59 INFO:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connecting> [IPv4 ('172.19.0.4', 9092)]>: Connection complete.
+2024-11-23 21:52:59 DEBUG:kafka.client:Node 1001 connected
+2024-11-23 21:52:59 INFO:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]>: Closing connection. 
+2024-11-23 21:52:59 DEBUG:kafka.conn:<BrokerConnection node_id=bootstrap-0 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]>: reconnect backoff 0.04538616449276527 after 1 failures
+2024-11-23 21:52:59 DEBUG:kafka.client:Sending metadata request MetadataRequest_v1(topics=['sample_topic']) to node 1001
+2024-11-23 21:52:59 DEBUG:kafka.protocol.parser:Sending request MetadataRequest_v1(topics=['sample_topic'])
+2024-11-23 21:52:59 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 1: MetadataRequest_v1(topics=['sample_topic'])
+2024-11-23 21:52:59 DEBUG:kafka.protocol.parser:Received correlation id: 1
+2024-11-23 21:52:59 DEBUG:kafka.protocol.parser:Processing response MetadataResponse_v1
+2024-11-23 21:52:59 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 1 (2.562284469604492 ms): MetadataResponse_v1(brokers=[(node_id=1001, host='kafka', port=9092, rack=None)], controller_id=1001, topics=[(error_code=0, topic='sample_topic', is_internal=False, partitions=[(error_code=0, partition=0, leader=1001, replicas=[1001], isr=[1001])])])
+2024-11-23 21:52:59 DEBUG:kafka.cluster:Updated cluster metadata to ClusterMetadata(brokers: 1, topics: 1, groups: 1)
+2024-11-23 21:52:59 DEBUG:kafka.protocol.parser:Received correlation id: 2
+2024-11-23 21:52:59 DEBUG:kafka.protocol.parser:Processing response SyncGroupResponse_v1
+2024-11-23 21:52:59 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 2 (33.54358673095703 ms): SyncGroupResponse_v1(throttle_time_ms=0, error_code=0, member_assignment=b'\x00\x00\x00\x00\x00\x01\x00\x0csample_topic\x00\x00\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00')
+2024-11-23 21:52:59 INFO:kafka.coordinator:Successfully joined group test-group with generation 1
+2024-11-23 21:52:59 INFO:kafka.consumer.subscription_state:Updated partition assignment: [TopicPartition(topic='sample_topic', partition=0)]
+2024-11-23 21:52:59 INFO:kafka.coordinator.consumer:Setting newly assigned partitions {TopicPartition(topic='sample_topic', partition=0)} for group test-group
+2024-11-23 21:52:59 DEBUG:kafka.coordinator.consumer:Group test-group fetching committed offsets for partitions: {TopicPartition(topic='sample_topic', partition=0)}
+2024-11-23 21:52:59 DEBUG:kafka.protocol.parser:Sending request OffsetFetchRequest_v1(consumer_group='test-group', topics=[(topic='sample_topic', partitions=[0])])
+2024-11-23 21:52:59 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 3: OffsetFetchRequest_v1(consumer_group='test-group', topics=[(topic='sample_topic', partitions=[0])])
+2024-11-23 21:52:59 DEBUG:kafka.protocol.parser:Received correlation id: 3
+2024-11-23 21:52:59 DEBUG:kafka.protocol.parser:Processing response OffsetFetchResponse_v1
+2024-11-23 21:52:59 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 3 (7.288932800292969 ms): OffsetFetchResponse_v1(topics=[(topic='sample_topic', partitions=[(partition=0, offset=-1, metadata='', error_code=0)])])
+2024-11-23 21:52:59 DEBUG:kafka.coordinator.consumer:Group test-group has no committed offset for partition TopicPartition(topic='sample_topic', partition=0)
+2024-11-23 21:52:59 DEBUG:kafka.consumer.fetcher:Resetting offset for partition TopicPartition(topic='sample_topic', partition=0) to earliest offset.
+2024-11-23 21:52:59 DEBUG:kafka.protocol.parser:Sending request OffsetRequest_v1(replica_id=-1, topics=[(topic='sample_topic', partitions=[(partition=0, timestamp=-2)])])
+2024-11-23 21:52:59 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 2: OffsetRequest_v1(replica_id=-1, topics=[(topic='sample_topic', partitions=[(partition=0, timestamp=-2)])])
+2024-11-23 21:52:59 DEBUG:kafka.protocol.parser:Received correlation id: 2
+2024-11-23 21:52:59 DEBUG:kafka.protocol.parser:Processing response OffsetResponse_v1
+2024-11-23 21:52:59 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 2 (8.692741394042969 ms): OffsetResponse_v1(topics=[(topic='sample_topic', partitions=[(partition=0, error_code=0, timestamp=-1, offset=0)])])
+2024-11-23 21:52:59 DEBUG:kafka.consumer.fetcher:Handling ListOffsetResponse response for TopicPartition(topic='sample_topic', partition=0). Fetched offset 0, timestamp -1
+2024-11-23 21:52:59 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 0
+2024-11-23 21:52:59 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:52:59 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=0, max_bytes=1048576)])])
+2024-11-23 21:52:59 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 3: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=0, max_bytes=1048576)])])
+2024-11-23 21:52:59 DEBUG:kafka.protocol.parser:Received correlation id: 3
+2024-11-23 21:52:59 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:52:59 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 3 (24.777889251708984 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=3, last_stable_offset=3, aborted_transactions=NULL, message_set=b'\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00`\x00\x00\x00\x00\x022FU\x9e\x00\x00\x00\x00\x00\x00\x00\x00\x01\x93Z^\xb4\xea\x00\x00\x01\x93Z^\xb4\xea\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x00\x00\x00\x01\\\x00\x00\x00\x01P{"id": 1, "name": "Item1", "value...')])])
+2024-11-23 21:52:59 DEBUG:kafka.consumer.fetcher:Adding fetched record for partition TopicPartition(topic='sample_topic', partition=0) with offset 0 to buffered record list
+2024-11-23 21:52:59 DEBUG:kafka.metrics.metrics:Added sensor with name topic.sample_topic.bytes-fetched
+2024-11-23 21:52:59 DEBUG:kafka.metrics.metrics:Added sensor with name topic.sample_topic.records-fetched
+2024-11-23 21:52:59 INFO:root:Received message: {'id': 1, 'name': 'Item1', 'value': 100}
+2024-11-23 21:52:59 INFO:root:Received message: {'id': 2, 'name': 'Item2', 'value': 200}
+2024-11-23 21:52:59 INFO:root:Received message: {'id': 3, 'name': 'Item3', 'value': 300}
+2024-11-23 21:52:59 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 3
+2024-11-23 21:52:59 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:52:59 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:52:59 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 4: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:00 DEBUG:kafka.protocol.parser:Received correlation id: 4
+2024-11-23 21:53:00 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:00 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 4 (506.93297386169434 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=3, last_stable_offset=3, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:00 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 3
+2024-11-23 21:53:00 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:00 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:00 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 5: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:00 DEBUG:kafka.protocol.parser:Received correlation id: 5
+2024-11-23 21:53:00 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:00 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 5 (503.0710697174072 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=3, last_stable_offset=3, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:00 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 3
+2024-11-23 21:53:00 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:00 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:00 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 6: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:01 DEBUG:kafka.protocol.parser:Received correlation id: 6
+2024-11-23 21:53:01 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:01 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 6 (502.8083324432373 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=3, last_stable_offset=3, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:01 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 3
+2024-11-23 21:53:01 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:01 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:01 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 7: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:01 DEBUG:kafka.protocol.parser:Received correlation id: 7
+2024-11-23 21:53:01 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:01 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 7 (503.08823585510254 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=3, last_stable_offset=3, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:01 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 3
+2024-11-23 21:53:01 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:01 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:01 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 8: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:02 DEBUG:kafka.protocol.parser:Received correlation id: 8
+2024-11-23 21:53:02 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:02 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 8 (502.12550163269043 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=3, last_stable_offset=3, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:02 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 3
+2024-11-23 21:53:02 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:02 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:02 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 9: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:02 DEBUG:kafka.coordinator:Heartbeat: test-group[1] kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a
+2024-11-23 21:53:02 DEBUG:kafka.protocol.parser:Sending request HeartbeatRequest_v1(group='test-group', generation_id=1, member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a')
+2024-11-23 21:53:02 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 4: HeartbeatRequest_v1(group='test-group', generation_id=1, member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a')
+2024-11-23 21:53:02 DEBUG:kafka.protocol.parser:Received correlation id: 4
+2024-11-23 21:53:02 DEBUG:kafka.protocol.parser:Processing response HeartbeatResponse_v1
+2024-11-23 21:53:02 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 4 (3.704071044921875 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+2024-11-23 21:53:02 DEBUG:kafka.coordinator:Received successful heartbeat response for group test-group
+2024-11-23 21:53:02 DEBUG:kafka.protocol.parser:Received correlation id: 9
+2024-11-23 21:53:02 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:02 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 9 (502.51078605651855 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=3, last_stable_offset=3, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:02 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 3
+2024-11-23 21:53:02 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:02 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:02 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 10: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:03 DEBUG:kafka.protocol.parser:Received correlation id: 10
+2024-11-23 21:53:03 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:03 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 10 (501.9521713256836 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=3, last_stable_offset=3, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:03 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 3
+2024-11-23 21:53:03 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:03 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:03 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 11: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:03 DEBUG:kafka.protocol.parser:Received correlation id: 11
+2024-11-23 21:53:03 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:03 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 11 (502.6359558105469 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=3, last_stable_offset=3, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:03 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 3
+2024-11-23 21:53:03 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:03 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:03 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 12: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:04 DEBUG:kafka.protocol.parser:Received correlation id: 12
+2024-11-23 21:53:04 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:04 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 12 (501.9552707672119 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=3, last_stable_offset=3, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:04 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 3
+2024-11-23 21:53:04 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:04 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:04 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 13: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:04 DEBUG:kafka.coordinator.consumer:Sending offset-commit request with {TopicPartition(topic='sample_topic', partition=0): OffsetAndMetadata(offset=3, metadata='')} for group test-group to coordinator-1001
+2024-11-23 21:53:04 DEBUG:kafka.protocol.parser:Sending request OffsetCommitRequest_v2(consumer_group='test-group', consumer_group_generation_id=1, consumer_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a', retention_time=-1, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, metadata='')])])
+2024-11-23 21:53:04 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 5: OffsetCommitRequest_v2(consumer_group='test-group', consumer_group_generation_id=1, consumer_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a', retention_time=-1, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, metadata='')])])
+2024-11-23 21:53:04 DEBUG:kafka.protocol.parser:Received correlation id: 5
+2024-11-23 21:53:04 DEBUG:kafka.protocol.parser:Processing response OffsetCommitResponse_v2
+2024-11-23 21:53:04 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 5 (11.10529899597168 ms): OffsetCommitResponse_v2(topics=[(topic='sample_topic', partitions=[(partition=0, error_code=0)])])
+2024-11-23 21:53:04 DEBUG:kafka.coordinator.consumer:Group test-group committed offset OffsetAndMetadata(offset=3, metadata='') for partition TopicPartition(topic='sample_topic', partition=0)
+2024-11-23 21:53:04 DEBUG:kafka.coordinator.consumer:Completed autocommit of offsets {TopicPartition(topic='sample_topic', partition=0): OffsetAndMetadata(offset=3, metadata='')} for group test-group
+2024-11-23 21:53:04 DEBUG:kafka.protocol.parser:Received correlation id: 13
+2024-11-23 21:53:04 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:04 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 13 (502.4881362915039 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=3, last_stable_offset=3, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:04 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 3
+2024-11-23 21:53:04 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:04 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:04 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 14: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:05 DEBUG:kafka.protocol.parser:Received correlation id: 14
+2024-11-23 21:53:05 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:05 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 14 (502.06899642944336 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=3, last_stable_offset=3, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:05 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 3
+2024-11-23 21:53:05 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:05 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:05 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 15: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:05 DEBUG:kafka.coordinator:Heartbeat: test-group[1] kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a
+2024-11-23 21:53:05 DEBUG:kafka.protocol.parser:Sending request HeartbeatRequest_v1(group='test-group', generation_id=1, member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a')
+2024-11-23 21:53:05 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 6: HeartbeatRequest_v1(group='test-group', generation_id=1, member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a')
+2024-11-23 21:53:05 DEBUG:kafka.protocol.parser:Received correlation id: 6
+2024-11-23 21:53:05 DEBUG:kafka.protocol.parser:Processing response HeartbeatResponse_v1
+2024-11-23 21:53:05 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 6 (2.580404281616211 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+2024-11-23 21:53:05 DEBUG:kafka.coordinator:Received successful heartbeat response for group test-group
+2024-11-23 21:53:05 DEBUG:kafka.protocol.parser:Received correlation id: 15
+2024-11-23 21:53:05 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:05 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 15 (502.6557445526123 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=3, last_stable_offset=3, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:05 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 3
+2024-11-23 21:53:05 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:05 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:05 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 16: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:06 DEBUG:kafka.protocol.parser:Received correlation id: 16
+2024-11-23 21:53:06 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:06 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 16 (502.62451171875 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=3, last_stable_offset=3, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:06 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 3
+2024-11-23 21:53:06 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:06 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:06 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 17: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=3, max_bytes=1048576)])])
+2024-11-23 21:53:06 DEBUG:kafka.protocol.parser:Received correlation id: 17
+2024-11-23 21:53:06 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:06 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 17 (360.86535453796387 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=4, last_stable_offset=4, aborted_transactions=NULL, message_set=b'\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00`\x00\x00\x00\x00\x02b\xa1\xdc\x84\x00\x00\x00\x00\x00\x00\x00\x00\x01\x93Z^\xdc\r\x00\x00\x01\x93Z^\xdc\r\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x00\x00\x00\x01\\\x00\x00\x00\x01P{"id": 1, "name": "Item1", "value...')])])
+2024-11-23 21:53:06 DEBUG:kafka.consumer.fetcher:Adding fetched record for partition TopicPartition(topic='sample_topic', partition=0) with offset 3 to buffered record list
+2024-11-23 21:53:06 INFO:root:Received message: {'id': 1, 'name': 'Item1', 'value': 100}
+2024-11-23 21:53:06 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 4
+2024-11-23 21:53:06 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:06 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=4, max_bytes=1048576)])])
+2024-11-23 21:53:06 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 18: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=4, max_bytes=1048576)])])
+2024-11-23 21:53:06 DEBUG:kafka.protocol.parser:Received correlation id: 18
+2024-11-23 21:53:06 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:06 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 18 (1.901865005493164 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=6, last_stable_offset=6, aborted_transactions=NULL, message_set=b'\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x8f\x00\x00\x00\x00\x02*\xbd}\x97\x00\x00\x00\x00\x00\x01\x00\x00\x01\x93Z^\xdc\x0e\x00\x00\x01\x93Z^\xdc\x0e\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x00\x00\x00\x02\\\x00\x00\x00\x01P{"id": 2, "name": "Item2", "value...')])])
+2024-11-23 21:53:06 DEBUG:kafka.consumer.fetcher:Adding fetched record for partition TopicPartition(topic='sample_topic', partition=0) with offset 4 to buffered record list
+2024-11-23 21:53:06 INFO:root:Received message: {'id': 2, 'name': 'Item2', 'value': 200}
+2024-11-23 21:53:06 INFO:root:Received message: {'id': 3, 'name': 'Item3', 'value': 300}
+2024-11-23 21:53:06 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 6
+2024-11-23 21:53:06 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:06 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:06 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 19: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:06 DEBUG:kafka.protocol.parser:Received correlation id: 19
+2024-11-23 21:53:06 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:06 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 19 (502.85935401916504 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=6, last_stable_offset=6, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:06 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 6
+2024-11-23 21:53:06 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:06 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:06 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 20: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:07 DEBUG:kafka.protocol.parser:Received correlation id: 20
+2024-11-23 21:53:07 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:07 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 20 (502.4561882019043 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=6, last_stable_offset=6, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:07 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 6
+2024-11-23 21:53:07 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:07 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:07 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 21: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:07 DEBUG:kafka.protocol.parser:Received correlation id: 21
+2024-11-23 21:53:07 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:07 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 21 (503.0808448791504 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=6, last_stable_offset=6, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:07 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 6
+2024-11-23 21:53:07 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:07 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:07 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 22: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:08 DEBUG:kafka.protocol.parser:Received correlation id: 22
+2024-11-23 21:53:08 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:08 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 22 (504.26220893859863 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=6, last_stable_offset=6, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:08 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 6
+2024-11-23 21:53:08 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:08 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:08 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 23: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:08 DEBUG:kafka.coordinator:Heartbeat: test-group[1] kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a
+2024-11-23 21:53:08 DEBUG:kafka.protocol.parser:Sending request HeartbeatRequest_v1(group='test-group', generation_id=1, member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a')
+2024-11-23 21:53:08 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 7: HeartbeatRequest_v1(group='test-group', generation_id=1, member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a')
+2024-11-23 21:53:08 DEBUG:kafka.protocol.parser:Received correlation id: 7
+2024-11-23 21:53:08 DEBUG:kafka.protocol.parser:Processing response HeartbeatResponse_v1
+2024-11-23 21:53:08 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 7 (2.2106170654296875 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+2024-11-23 21:53:08 DEBUG:kafka.coordinator:Received successful heartbeat response for group test-group
+2024-11-23 21:53:08 DEBUG:kafka.protocol.parser:Received correlation id: 23
+2024-11-23 21:53:08 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:08 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 23 (502.50792503356934 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=6, last_stable_offset=6, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:08 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 6
+2024-11-23 21:53:08 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:08 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:08 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 24: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:09 DEBUG:kafka.protocol.parser:Received correlation id: 24
+2024-11-23 21:53:09 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:09 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 24 (503.27277183532715 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=6, last_stable_offset=6, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:09 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 6
+2024-11-23 21:53:09 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:09 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:09 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 25: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:09 DEBUG:kafka.coordinator.consumer:Sending offset-commit request with {TopicPartition(topic='sample_topic', partition=0): OffsetAndMetadata(offset=6, metadata='')} for group test-group to coordinator-1001
+2024-11-23 21:53:09 DEBUG:kafka.protocol.parser:Sending request OffsetCommitRequest_v2(consumer_group='test-group', consumer_group_generation_id=1, consumer_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a', retention_time=-1, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, metadata='')])])
+2024-11-23 21:53:09 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 8: OffsetCommitRequest_v2(consumer_group='test-group', consumer_group_generation_id=1, consumer_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a', retention_time=-1, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, metadata='')])])
+2024-11-23 21:53:09 DEBUG:kafka.protocol.parser:Received correlation id: 8
+2024-11-23 21:53:09 DEBUG:kafka.protocol.parser:Processing response OffsetCommitResponse_v2
+2024-11-23 21:53:09 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 8 (3.208160400390625 ms): OffsetCommitResponse_v2(topics=[(topic='sample_topic', partitions=[(partition=0, error_code=0)])])
+2024-11-23 21:53:09 DEBUG:kafka.coordinator.consumer:Group test-group committed offset OffsetAndMetadata(offset=6, metadata='') for partition TopicPartition(topic='sample_topic', partition=0)
+2024-11-23 21:53:09 DEBUG:kafka.coordinator.consumer:Completed autocommit of offsets {TopicPartition(topic='sample_topic', partition=0): OffsetAndMetadata(offset=6, metadata='')} for group test-group
+2024-11-23 21:53:09 DEBUG:kafka.protocol.parser:Received correlation id: 25
+2024-11-23 21:53:09 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:09 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 25 (502.941370010376 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=6, last_stable_offset=6, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:09 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 6
+2024-11-23 21:53:09 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:09 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:09 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 26: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:10 DEBUG:kafka.protocol.parser:Received correlation id: 26
+2024-11-23 21:53:10 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:10 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 26 (502.5002956390381 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=6, last_stable_offset=6, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:10 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 6
+2024-11-23 21:53:10 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:10 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:10 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 27: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:10 DEBUG:kafka.protocol.parser:Received correlation id: 27
+2024-11-23 21:53:10 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:10 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 27 (503.59201431274414 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=6, last_stable_offset=6, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:10 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 6
+2024-11-23 21:53:10 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:10 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:10 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 28: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:11 DEBUG:kafka.protocol.parser:Received correlation id: 28
+2024-11-23 21:53:11 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:11 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 28 (503.1142234802246 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=6, last_stable_offset=6, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:11 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 6
+2024-11-23 21:53:11 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:11 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:11 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 29: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:11 DEBUG:kafka.coordinator:Heartbeat: test-group[1] kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a
+2024-11-23 21:53:11 DEBUG:kafka.protocol.parser:Sending request HeartbeatRequest_v1(group='test-group', generation_id=1, member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a')
+2024-11-23 21:53:11 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 9: HeartbeatRequest_v1(group='test-group', generation_id=1, member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a')
+2024-11-23 21:53:11 DEBUG:kafka.protocol.parser:Received correlation id: 9
+2024-11-23 21:53:11 DEBUG:kafka.protocol.parser:Processing response HeartbeatResponse_v1
+2024-11-23 21:53:11 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 9 (1.8610954284667969 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+2024-11-23 21:53:11 DEBUG:kafka.coordinator:Received successful heartbeat response for group test-group
+2024-11-23 21:53:11 DEBUG:kafka.protocol.parser:Received correlation id: 29
+2024-11-23 21:53:11 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:11 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 29 (502.1810531616211 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=6, last_stable_offset=6, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:11 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 6
+2024-11-23 21:53:11 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:11 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:11 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 30: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:12 DEBUG:kafka.protocol.parser:Received correlation id: 30
+2024-11-23 21:53:12 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:12 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 30 (502.6068687438965 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=6, last_stable_offset=6, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:12 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 6
+2024-11-23 21:53:12 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:12 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:12 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 31: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:13 DEBUG:kafka.protocol.parser:Received correlation id: 31
+2024-11-23 21:53:13 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:13 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 31 (502.87437438964844 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=6, last_stable_offset=6, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:13 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 6
+2024-11-23 21:53:13 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:13 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:13 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 32: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:13 DEBUG:kafka.protocol.parser:Received correlation id: 32
+2024-11-23 21:53:13 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:13 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 32 (503.19623947143555 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=6, last_stable_offset=6, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:13 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 6
+2024-11-23 21:53:13 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:13 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:13 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 33: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:14 DEBUG:kafka.protocol.parser:Received correlation id: 33
+2024-11-23 21:53:14 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:14 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 33 (503.5250186920166 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=6, last_stable_offset=6, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:14 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 6
+2024-11-23 21:53:14 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:14 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:14 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 34: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:14 DEBUG:kafka.coordinator.consumer:Sending offset-commit request with {TopicPartition(topic='sample_topic', partition=0): OffsetAndMetadata(offset=6, metadata='')} for group test-group to coordinator-1001
+2024-11-23 21:53:14 DEBUG:kafka.protocol.parser:Sending request OffsetCommitRequest_v2(consumer_group='test-group', consumer_group_generation_id=1, consumer_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a', retention_time=-1, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, metadata='')])])
+2024-11-23 21:53:14 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 10: OffsetCommitRequest_v2(consumer_group='test-group', consumer_group_generation_id=1, consumer_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a', retention_time=-1, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, metadata='')])])
+2024-11-23 21:53:14 DEBUG:kafka.protocol.parser:Received correlation id: 10
+2024-11-23 21:53:14 DEBUG:kafka.protocol.parser:Processing response OffsetCommitResponse_v2
+2024-11-23 21:53:14 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 10 (3.7810802459716797 ms): OffsetCommitResponse_v2(topics=[(topic='sample_topic', partitions=[(partition=0, error_code=0)])])
+2024-11-23 21:53:14 DEBUG:kafka.coordinator.consumer:Group test-group committed offset OffsetAndMetadata(offset=6, metadata='') for partition TopicPartition(topic='sample_topic', partition=0)
+2024-11-23 21:53:14 DEBUG:kafka.coordinator.consumer:Completed autocommit of offsets {TopicPartition(topic='sample_topic', partition=0): OffsetAndMetadata(offset=6, metadata='')} for group test-group
+2024-11-23 21:53:14 DEBUG:kafka.protocol.parser:Received correlation id: 34
+2024-11-23 21:53:14 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:14 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 34 (502.69317626953125 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=6, last_stable_offset=6, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:14 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 6
+2024-11-23 21:53:14 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:14 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:14 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 35: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:14 DEBUG:kafka.coordinator:Heartbeat: test-group[1] kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a
+2024-11-23 21:53:14 DEBUG:kafka.protocol.parser:Sending request HeartbeatRequest_v1(group='test-group', generation_id=1, member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a')
+2024-11-23 21:53:14 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 11: HeartbeatRequest_v1(group='test-group', generation_id=1, member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a')
+2024-11-23 21:53:14 DEBUG:kafka.protocol.parser:Received correlation id: 11
+2024-11-23 21:53:14 DEBUG:kafka.protocol.parser:Processing response HeartbeatResponse_v1
+2024-11-23 21:53:14 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 11 (2.0194053649902344 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+2024-11-23 21:53:14 DEBUG:kafka.coordinator:Received successful heartbeat response for group test-group
+2024-11-23 21:53:15 DEBUG:kafka.protocol.parser:Received correlation id: 35
+2024-11-23 21:53:15 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:15 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 35 (502.8386116027832 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=6, last_stable_offset=6, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:15 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 6
+2024-11-23 21:53:15 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:15 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:15 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 36: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:15 DEBUG:kafka.protocol.parser:Received correlation id: 36
+2024-11-23 21:53:15 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:15 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 36 (502.6731491088867 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=6, last_stable_offset=6, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:15 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 6
+2024-11-23 21:53:15 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:15 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:15 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 37: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:16 DEBUG:kafka.protocol.parser:Received correlation id: 37
+2024-11-23 21:53:16 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:16 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 37 (503.16548347473145 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=6, last_stable_offset=6, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:16 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 6
+2024-11-23 21:53:16 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:16 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:16 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 38: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=6, max_bytes=1048576)])])
+2024-11-23 21:53:16 DEBUG:kafka.protocol.parser:Received correlation id: 38
+2024-11-23 21:53:16 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:16 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 38 (435.55474281311035 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=8, last_stable_offset=8, aborted_transactions=NULL, message_set=b'\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x8f\x00\x00\x00\x00\x02\xa5\x99\x82\x8f\x00\x00\x00\x00\x00\x01\x00\x00\x01\x93Z_\x03.\x00\x00\x01\x93Z_\x03/\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x00\x00\x00\x02\\\x00\x00\x00\x01P{"id": 1, "name": "Item1", "value...')])])
+2024-11-23 21:53:16 DEBUG:kafka.consumer.fetcher:Adding fetched record for partition TopicPartition(topic='sample_topic', partition=0) with offset 6 to buffered record list
+2024-11-23 21:53:16 INFO:root:Received message: {'id': 1, 'name': 'Item1', 'value': 100}
+2024-11-23 21:53:16 INFO:root:Received message: {'id': 2, 'name': 'Item2', 'value': 200}
+2024-11-23 21:53:16 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 8
+2024-11-23 21:53:16 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:16 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=8, max_bytes=1048576)])])
+2024-11-23 21:53:16 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 39: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=8, max_bytes=1048576)])])
+2024-11-23 21:53:16 DEBUG:kafka.protocol.parser:Received correlation id: 39
+2024-11-23 21:53:16 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:16 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 39 (2.778768539428711 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=9, last_stable_offset=9, aborted_transactions=NULL, message_set=b'\x00\x00\x00\x00\x00\x00\x00\x08\x00\x00\x00`\x00\x00\x00\x00\x02\xadzW\xb0\x00\x00\x00\x00\x00\x00\x00\x00\x01\x93Z_\x030\x00\x00\x01\x93Z_\x030\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\xff\x00\x00\x00\x01\\\x00\x00\x00\x01P{"id": 3, "name": "Item3", "value...')])])
+2024-11-23 21:53:16 DEBUG:kafka.consumer.fetcher:Adding fetched record for partition TopicPartition(topic='sample_topic', partition=0) with offset 8 to buffered record list
+2024-11-23 21:53:16 INFO:root:Received message: {'id': 3, 'name': 'Item3', 'value': 300}
+2024-11-23 21:53:16 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 9
+2024-11-23 21:53:16 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:16 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:16 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 40: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:16 DEBUG:kafka.protocol.parser:Received correlation id: 40
+2024-11-23 21:53:16 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:16 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 40 (502.394437789917 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=9, last_stable_offset=9, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:16 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 9
+2024-11-23 21:53:16 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:16 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:16 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 41: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:17 DEBUG:kafka.protocol.parser:Received correlation id: 41
+2024-11-23 21:53:17 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:17 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 41 (503.41010093688965 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=9, last_stable_offset=9, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:17 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 9
+2024-11-23 21:53:17 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:17 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:17 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 42: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:17 DEBUG:kafka.coordinator:Heartbeat: test-group[1] kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a
+2024-11-23 21:53:17 DEBUG:kafka.protocol.parser:Sending request HeartbeatRequest_v1(group='test-group', generation_id=1, member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a')
+2024-11-23 21:53:17 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 12: HeartbeatRequest_v1(group='test-group', generation_id=1, member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a')
+2024-11-23 21:53:17 DEBUG:kafka.protocol.parser:Received correlation id: 12
+2024-11-23 21:53:17 DEBUG:kafka.protocol.parser:Processing response HeartbeatResponse_v1
+2024-11-23 21:53:17 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 12 (1.9354820251464844 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+2024-11-23 21:53:17 DEBUG:kafka.coordinator:Received successful heartbeat response for group test-group
+2024-11-23 21:53:17 DEBUG:kafka.protocol.parser:Received correlation id: 42
+2024-11-23 21:53:17 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:17 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 42 (502.58469581604004 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=9, last_stable_offset=9, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:17 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 9
+2024-11-23 21:53:17 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:17 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:17 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 43: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:18 DEBUG:kafka.protocol.parser:Received correlation id: 43
+2024-11-23 21:53:18 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:18 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 43 (502.9757022857666 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=9, last_stable_offset=9, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:18 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 9
+2024-11-23 21:53:18 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:18 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:18 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 44: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:18 DEBUG:kafka.protocol.parser:Received correlation id: 44
+2024-11-23 21:53:18 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:18 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 44 (502.7766227722168 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=9, last_stable_offset=9, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:18 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 9
+2024-11-23 21:53:18 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:18 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:18 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 45: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:19 DEBUG:kafka.protocol.parser:Received correlation id: 45
+2024-11-23 21:53:19 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:19 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 45 (503.4337043762207 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=9, last_stable_offset=9, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:19 DEBUG:kafka.coordinator.consumer:Sending offset-commit request with {TopicPartition(topic='sample_topic', partition=0): OffsetAndMetadata(offset=9, metadata='')} for group test-group to coordinator-1001
+2024-11-23 21:53:19 DEBUG:kafka.protocol.parser:Sending request OffsetCommitRequest_v2(consumer_group='test-group', consumer_group_generation_id=1, consumer_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a', retention_time=-1, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, metadata='')])])
+2024-11-23 21:53:19 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 13: OffsetCommitRequest_v2(consumer_group='test-group', consumer_group_generation_id=1, consumer_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a', retention_time=-1, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, metadata='')])])
+2024-11-23 21:53:19 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 9
+2024-11-23 21:53:19 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:19 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:19 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 46: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:19 DEBUG:kafka.protocol.parser:Received correlation id: 13
+2024-11-23 21:53:19 DEBUG:kafka.protocol.parser:Processing response OffsetCommitResponse_v2
+2024-11-23 21:53:19 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 13 (3.487110137939453 ms): OffsetCommitResponse_v2(topics=[(topic='sample_topic', partitions=[(partition=0, error_code=0)])])
+2024-11-23 21:53:19 DEBUG:kafka.coordinator.consumer:Group test-group committed offset OffsetAndMetadata(offset=9, metadata='') for partition TopicPartition(topic='sample_topic', partition=0)
+2024-11-23 21:53:19 DEBUG:kafka.coordinator.consumer:Completed autocommit of offsets {TopicPartition(topic='sample_topic', partition=0): OffsetAndMetadata(offset=9, metadata='')} for group test-group
+2024-11-23 21:53:20 DEBUG:kafka.protocol.parser:Received correlation id: 46
+2024-11-23 21:53:20 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:20 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 46 (502.08258628845215 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=9, last_stable_offset=9, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:20 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 9
+2024-11-23 21:53:20 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:20 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:20 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 47: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:20 DEBUG:kafka.protocol.parser:Received correlation id: 47
+2024-11-23 21:53:20 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:20 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 47 (501.9493103027344 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=9, last_stable_offset=9, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:20 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 9
+2024-11-23 21:53:20 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:20 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:20 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 48: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:20 DEBUG:kafka.coordinator:Heartbeat: test-group[1] kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a
+2024-11-23 21:53:20 DEBUG:kafka.protocol.parser:Sending request HeartbeatRequest_v1(group='test-group', generation_id=1, member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a')
+2024-11-23 21:53:20 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 14: HeartbeatRequest_v1(group='test-group', generation_id=1, member_id='kafka-python-2.0.2-ffe04cb1-f52d-445e-855d-a49fbccfba8a')
+2024-11-23 21:53:20 DEBUG:kafka.protocol.parser:Received correlation id: 14
+2024-11-23 21:53:20 DEBUG:kafka.protocol.parser:Processing response HeartbeatResponse_v1
+2024-11-23 21:53:20 DEBUG:kafka.conn:<BrokerConnection node_id=coordinator-1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 14 (2.3779869079589844 ms): HeartbeatResponse_v1(throttle_time_ms=0, error_code=0)
+2024-11-23 21:53:20 DEBUG:kafka.coordinator:Received successful heartbeat response for group test-group
+2024-11-23 21:53:21 DEBUG:kafka.protocol.parser:Received correlation id: 48
+2024-11-23 21:53:21 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:21 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 48 (502.54249572753906 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=9, last_stable_offset=9, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:21 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 9
+2024-11-23 21:53:21 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:21 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:21 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 49: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:21 DEBUG:kafka.protocol.parser:Received correlation id: 49
+2024-11-23 21:53:21 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:21 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 49 (502.4263858795166 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=9, last_stable_offset=9, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:21 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 9
+2024-11-23 21:53:21 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:21 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:21 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 50: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:22 DEBUG:kafka.protocol.parser:Received correlation id: 50
+2024-11-23 21:53:22 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:22 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 50 (502.7127265930176 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=9, last_stable_offset=9, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:22 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 9
+2024-11-23 21:53:22 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:22 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:22 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 51: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:22 DEBUG:kafka.protocol.parser:Received correlation id: 51
+2024-11-23 21:53:22 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:22 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 51 (501.89805030822754 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=9, last_stable_offset=9, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:22 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 9
+2024-11-23 21:53:22 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:22 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:22 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 52: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:23 DEBUG:kafka.protocol.parser:Received correlation id: 52
+2024-11-23 21:53:23 DEBUG:kafka.protocol.parser:Processing response FetchResponse_v4
+2024-11-23 21:53:23 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Response 52 (502.5367736816406 ms): FetchResponse_v4(throttle_time_ms=0, topics=[(topics='sample_topic', partitions=[(partition=0, error_code=0, highwater_offset=9, last_stable_offset=9, aborted_transactions=NULL, message_set=b'')])])
+2024-11-23 21:53:23 DEBUG:kafka.consumer.fetcher:Adding fetch request for partition TopicPartition(topic='sample_topic', partition=0) at offset 9
+2024-11-23 21:53:23 DEBUG:kafka.consumer.fetcher:Sending FetchRequest to node 1001
+2024-11-23 21:53:23 DEBUG:kafka.protocol.parser:Sending request FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])
+2024-11-23 21:53:23 DEBUG:kafka.conn:<BrokerConnection node_id=1001 host=kafka:9092 <connected> [IPv4 ('172.19.0.4', 9092)]> Request 53: FetchRequest_v4(replica_id=-1, max_wait_time=500, min_bytes=1, max_bytes=52428800, isolation_level=0, topics=[(topic='sample_topic', partitions=[(partition=0, offset=9, max_bytes=1048576)])])

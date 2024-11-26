@@ -1,0 +1,96 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres-container
+    environment:
+      POSTGRES_USER: kafkauser
+      POSTGRES_PASSWORD: kafkapassword
+      POSTGRES_DB: kafkadatabase
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U kafkauser"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - kafka-network
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.3.0
+    container_name: zookeeper-container
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+    ports:
+      - "2181:2181"
+    networks:
+      - kafka-network
+
+  kafka:
+    image: confluentinc/cp-kafka:7.3.0
+    container_name: kafka-container
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    ports:
+      - "9092:9092"
+    healthcheck:
+      test: ["CMD", "kafka-topics", "--bootstrap-server", "localhost:9092", "--list"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - kafka-network
+
+  producer:
+    build:
+      context: ./producer
+    container_name: producer-container
+    depends_on:
+      kafka:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./producer:/app  # Kod dosyalarını bağlama
+    command: python /app/producer.py
+    networks:
+      - kafka-network
+
+  add_data:
+    build:
+      context: ./data_addition
+    container_name: add_Data-container
+    depends_on:
+      kafka:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./data_addition:/app  # Kod dosyalarını bağlama
+    command: python /app/add_Data.py
+    networks:
+      - kafka-network
+
+  consumer:
+    build:
+      context: ./consumer
+    container_name: consumer-container
+    depends_on:
+      kafka:
+        condition: service_healthy
+    volumes:
+      - ./consumer:/app  # Kod dosyalarını bağlama
+    command: python /app/consumer.py
+    networks:
+      - kafka-network
+
+networks:
+  kafka-network:
